@@ -1,0 +1,21 @@
+{
+  "name": "nuxt-app",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare",
+    "package": "containerify --folder . --toDocker",
+    "docker:run": "docker run -it --rm -p 3000:3000 --env-file .env epsilon:local"
+  },
+  "devDependencies": {
+    "containerify": "^2.6.1",
+    "nuxt": "^3.9.1",
+    "vue": "^3.4.10",
+    "vue-router": "^4.2.5",
+    "vuetify-nuxt-module": "^0.10.1"
+  }
+}

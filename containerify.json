@@ -1,0 +1,12 @@
+{
+  "fromImage": "node:20-alpine",
+  "toImage": "epsilon:local",
+  "platform": "linux/amd64",
+  "entrypoint": "node .output/server/index.mjs",
+  "labels": {
+    "dev.stonegarden.app": "epsilon"
+  },
+  "customContent": [
+    ".output"
+  ]
+}
