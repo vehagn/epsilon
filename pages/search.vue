@@ -1,4 +1,4 @@
-<script setup lang="ts">
+<script lang="ts" setup>
 import {User} from "#components"
 
 let userId = ref(null)
@@ -6,7 +6,6 @@ let userId = ref(null)
 const {data: user} = useLazyFetch(() => `/api/users/${userId.value || -1}`, {
   immediate: false,
 })
-
 </script>
 
 <template>
@@ -18,10 +17,7 @@ const {data: user} = useLazyFetch(() => `/api/users/${userId.value || -1}`, {
         </v-form>
       </v-col>
       <v-col>
-        <p v-if="user">
-          <User :user="user"/>
-        </p>
-        <p v-else>User not found</p>
+        <User :user="user"/>
       </v-col>
     </v-row>
   </v-container>

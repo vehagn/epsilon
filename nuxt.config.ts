@@ -1,5 +1,5 @@
 // Nuxt config file
-import { defineNuxtConfig } from 'nuxt/config'
+import {defineNuxtConfig} from 'nuxt/config'
 
 export default defineNuxtConfig({
     runtimeConfig: {

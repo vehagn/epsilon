@@ -8,10 +8,10 @@ export default defineEventHandler(async (event) => {
     const repo = await $fetch(
         `https://delta-test.stonegarden.dev/api/v1/users/${query.user_id}`,
         {
-        //headers: {
-        //    Authorization: `token ${config.githubToken}`
-        //}
-    })
+            //headers: {
+            //    Authorization: `token ${config.githubToken}`
+            //}
+        })
 
     return repo
 })

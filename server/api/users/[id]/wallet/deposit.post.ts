@@ -1,5 +1,6 @@
 export default defineEventHandler(async (event) => {
     const id = parseInt(getRouterParam(event, 'id')!) as number
+    const query = getQuery(event)
 
     if (!Number.isInteger(id)) {
         throw createError({
@@ -9,10 +10,8 @@ export default defineEventHandler(async (event) => {
     }
 
     const config = useRuntimeConfig()
-    return await $fetch(`${config.backendUrl}/api/v1/users/${id}`)
-        .catch(err => {
-            if (err.statusCode == 404) {
-                console.log('User not found')
-            }
-        })
+    return await $fetch(`${config.backendUrl}/api/v1/users/${id}/wallet/deposit`, {
+        method: 'POST',
+        params: {value: query.value}
+    })
 })

@@ -9,10 +9,10 @@ export default defineEventHandler(async (event) => {
     }
 
     const config = useRuntimeConfig()
-    return await $fetch(`${config.backendUrl}/api/v1/users/${id}`)
+    return await $fetch(`${config.backendUrl}/api/v1/users/${id}/wallet`)
         .catch(err => {
             if (err.statusCode == 404) {
-                console.log('User not found')
+                console.log('Wallet not found')
             }
         })
 })
