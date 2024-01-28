@@ -1,75 +1,20 @@
-# Nuxt 3 Minimal Starter
+# Epsilon
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+Frontend for [Deltahouse](https://github.com/vehagn/deltahouse)
 
-## Setup
+## Getting started
 
-Make sure to install the dependencies:
+Install Node.js 20 from https://nodejs.org/en or a package manager of your choice.
 
-```bash
-# npm
-npm install
+This project uses [`Yarn`](https://yarnpkg.com/) for project management.
 
-# pnpm
-pnpm install
+Run `yarn install` to install project dependencies.
 
-# yarn
-yarn install
+To connect to a local backend create a file called `.env` in the root project folder and add
 
-# bun
-bun install
+```
+#.env
+NUXT_BACKEND_URL=http://localhost:8080
 ```
 
-## Development Server
-
-Start the development server on `http://localhost:3000`:
-
-```bash
-# npm
-npm run dev
-
-# pnpm
-pnpm run dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
-```
-
-## Production
-
-Build the application for production:
-
-```bash
-# npm
-npm run build
-
-# pnpm
-pnpm run build
-
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm run preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+This variable will be picked up when running e.g. `yarn dev` to start the dev server.

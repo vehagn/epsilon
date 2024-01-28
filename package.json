@@ -1,5 +1,6 @@
 {
-  "name": "nuxt-app",
+  "name": "epsilon",
+  "packageManager": "yarn@4.0.2",
   "private": true,
   "type": "module",
   "scripts": {
