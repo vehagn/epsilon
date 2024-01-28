@@ -1858,10 +1858,10 @@ console-control-strings@^1.0.0, console-control-strings@^1.1.0:
   resolved "https://registry.npmjs.org/console-control-strings/-/console-control-strings-1.1.0.tgz"
   integrity sha512-ty/fTekppD2fIwRvnZAVdeOiGd1c7YXEixbgJTNzqcxJWKQnjJ/V1bNEEE6hygpM3WjwHFUVK6HTjWSzV4a8sQ==
 
-containerify@^2.6.1:
-  version "2.6.1"
-  resolved "https://registry.npmjs.org/containerify/-/containerify-2.6.1.tgz"
-  integrity sha512-9EUqqlEIAK3RRZPhLbaw7C34MuUqOuRQS1i79yaBuOzepzCKsTrN/9nB9m+QrRlSC4BXN7guQgWDH8JZRL8gAg==
+containerify@^3.1.0:
+  version "3.1.0"
+  resolved "https://registry.npmjs.org/containerify/-/containerify-3.1.0.tgz"
+  integrity sha512-WR1enCbTGQ7b876v8c/m9m+YLH/gP+zsgKw4+Spx19MBkkR2qblE0Qi8c9lNkDHCjXLcBm6Dy9Nt2t6AvKyVbA==
   dependencies:
     commander "^11.0.0"
     fs-extra "^11.1.0"

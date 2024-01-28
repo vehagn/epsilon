@@ -12,7 +12,7 @@
     "docker:run": "docker run -it --rm -p 3000:3000 --env-file .env epsilon:local"
   },
   "devDependencies": {
-    "containerify": "^2.6.1",
+    "containerify": "^3.1.0",
     "nuxt": "^3.9.1",
     "vue": "^3.4.10",
     "vue-router": "^4.2.5",
